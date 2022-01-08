@@ -1,0 +1,64 @@
+#score  {
+    align-items:"center";
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#game{
+    width:600px;
+    height: 300px;
+    border: 2px solid black;
+margin: auto;
+background-image: url("https://previews.123rf.com/images/vitaliyvill/vitaliyvill1612/vitaliyvill161200179/69114552-black-and-white-landscape-for-game-black-and-white-background-seamless-cartoon-landscape-vector-unen.jpg");
+background-size: cover;
+}
+#dino {
+    height: 100px;
+    width:100px;
+    position: relative;
+    top: 225px;
+    background-image: url("https://static.thenounproject.com/png/378450-200.png");
+ background-size: cover;   
+ 
+ animation: jump 0.5s;
+}
+
+#police{
+    height: 80px;
+    width:80px;
+    position:relative;
+    top: 90px;
+    left: 520px;
+    background-image: url("http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/76d5c39e89732ac.png");
+    background-size: cover;
+    
+}
+#rock{
+    height: 45px;
+    width: 45px;
+    position:relative;
+    top: 142px;
+    left: 490px;
+    background-image: url("http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/63e15ad4a99ac13.png");
+    background-size: cover;
+    animation:rock 3s infinite;
+}
+@keyframes rock {
+    0% {
+        left:490px;
+    }
+    100% {
+        left:-110px
+    }
+}
+
+.jump-animation{
+    animation: jump 0.5s;
+}
+@keyframes jump {
+    0%{ top:225px;}
+    50%{ top:50px;}
+    75%{ top:75px;}
+    100%{top: 225px}
+}
